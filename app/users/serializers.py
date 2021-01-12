@@ -1,3 +1,11 @@
+'''
+Author:Sivaperumal.M
+Date:13.01.2021
+Description: Created the Serialzers UserLoginSerializer for  Login , AuthUserSerializer for authentication and token creation
+and UserRegisterSerializer for Resgistering Users
+'''
+
+
 from django.contrib.auth import get_user_model
 from rest_framework.authtoken.models import Token
 from rest_framework import serializers
@@ -50,7 +58,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Username is already taken")
         return AbstractBaseUser.normalize_username(value)
 
-    def validate_password(self, value):
+    def validate_password(self, value): #Custom Password validations
         special_characters ="_-#"
         if not any(char.isdigit() for char in value):
             raise ValidationError("Password must contain at least one numeric value.")

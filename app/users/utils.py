@@ -1,3 +1,10 @@
+
+'''
+Author:Sivaperumal.M
+Date:13.01.2021
+Description: Helper functions for User Autentication and Creation
+'''
+
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 from django.contrib.auth import get_user_model

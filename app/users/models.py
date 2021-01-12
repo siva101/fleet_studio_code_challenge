@@ -1,3 +1,9 @@
+'''
+Author:Sivaperumal.M
+Date:13.01.2021
+Description: Created the CustomUSer Model by inheriting the AsbstarcUser in built from Django
+'''
+
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 

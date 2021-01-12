@@ -1,3 +1,10 @@
+
+'''
+Author:Sivaperumal.M
+Date:13.01.2021
+Description: Created the new Viewset for Login,Registration and Logout
+'''
+
 from django.contrib.auth import get_user_model,logout
 from django.core.exceptions import ImproperlyConfigured
 from rest_framework import viewsets, status
