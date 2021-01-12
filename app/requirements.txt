@@ -1,0 +1,8 @@
+Django==2.2.16
+django-widget-tweaks==1.4.8
+djangorestframework==3.12.2
+mysqlclient==2.0.1
+Pillow==8.0.1
+psycopg2-binary==2.8.6
+pytz==2020.1
+sqlparse==0.4.1
